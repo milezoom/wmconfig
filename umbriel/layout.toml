@@ -1,0 +1,71 @@
+[layout]
+mode = "scrolling"                              # scrolling, dwindle, or master
+gap = 8                                         # Logical pixels between tiles, 0-500
+width_presets = [0.333, 0.5, 0.667]             # Width and height cycling fractions
+
+[layout.struts]
+# Signed logical pixels reserved after panel exclusive zones. Negative values
+# expand the tiled area beyond that edge.
+left = 0                                        # -65535 to 65535
+right = 0
+top = 0
+bottom = 0
+
+[layout.scrolling]
+# The strip axis is perpendicular to the output's workspace_axis.
+default_width_fraction = 0.5                    # Initial width for new columns, 0.1-1.0
+center_underfull_strip = true                   # Center a strip narrower than the viewport
+center_focused = "never"                        # never, always, or on_overflow
+
+[layout.dwindle]
+# preserve_split = false                        # Keep every split direction fixed after creation
+
+[layout.master]
+position = "left"                               # left or right master area
+default_width_fraction = 0.55                   # Initial master area fraction, 0.1-0.9
+new_on_top = true                               # Put new windows at the top of the stack
+
+# Blur every window. Keep this selectorless rule first so later matching rules
+# can override individual blur settings.
+[[window_rule]]
+blur = true
+blur_optimized = false
+default_maximize = true
+
+# Noctalia settings
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_size = [1020, 900]
+
+# Noctalia share picker
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_size = [800, 600]
+
+# Browsers expose no semantic PiP role or global position control.
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+# Keep Steam notification toasts in the bottom-right corner without stealing
+# focus, and pin them so workspace switches do not hide them.
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+[[window_rule]]
+match.title = "Android Emulator."
+default_floating = true
+
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+blur_optimized = false
