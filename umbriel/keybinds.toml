@@ -31,8 +31,6 @@
 "Mod+Shift+Right" = "column-move-right"
 "Mod+F" = "window-toggle-fullscreen"             # Exit restores the previous layout size immediately
 "Mod+Ctrl+F" = "window-toggle-maximize"
-"Mod+R" = "window-cycle-width"
-"Mod+Shift+R" = "window-cycle-width-back"
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
 "Mod+WheelUp" = "window-focus-left"
