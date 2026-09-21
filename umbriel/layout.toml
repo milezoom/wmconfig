@@ -1,6 +1,6 @@
 [layout]
 mode = "scrolling"                              # scrolling, dwindle, or master
-gap = 8                                         # Logical pixels between tiles, 0-500
+gap = 4                                         # Logical pixels between tiles, 0-500
 
 [layout.struts]
 # Signed logical pixels reserved after panel exclusive zones. Negative values
