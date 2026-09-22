@@ -5,6 +5,7 @@
 "Mod" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Q" = "window-close"
 "Mod+L" = "spawn:noctalia msg session lock"
+"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
 "Print" = "spawn:flameshot gui"
 
 # Focus navigation. In overview, Mod+Up/Down retain normal layout focus, so they
