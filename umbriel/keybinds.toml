@@ -5,6 +5,7 @@
 "Mod" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Q" = "window-close"
 "Mod+L" = "spawn:noctalia msg session lock"
+"Print" = "spawn:flameshot gui"
 
 # Focus navigation. In overview, Mod+Up/Down retain normal layout focus, so they
 # traverse stacks in the default horizontal layout. Bare Up/Down move between
@@ -61,3 +62,13 @@
 "Mod+Ctrl+Shift+Up" = "window-move-to-workspace-previous"
 # Quote an all-digit name to distinguish it from a position.
 # "Mod+Ctrl+2" = 'workspace-switch:"2"/DP-2'
+
+# Brightness
+"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up eDP-1 5%"
+"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down eDP-1 5%"
+
+# Mic and Speaker
+"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up 5%"
+"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down 5%"
+"XF86AudioMute" = "spawn:noctalia msg volume-mute"
+"XF86AudioMicMute" = "spawn:noctalia msg mic-mute"
