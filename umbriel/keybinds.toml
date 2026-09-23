@@ -31,8 +31,9 @@
 "Mod+Shift+Down" = "window-move-down"
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+Right" = "column-move-right"
-"Mod+F" = "window-toggle-fullscreen"             # Exit restores the previous layout size immediately
-"Mod+Ctrl+F" = "window-toggle-maximize"
+# "Mod+F" = "window-toggle-fullscreen"             # Exit restores the previous layout size immediately
+# "Mod+Ctrl+F" = "window-toggle-maximize"
+"Mod+F" = "window-toggle-maximize"             # Exit restores the previous layout size immediately
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
 "Mod+WheelUp" = "window-focus-left"
