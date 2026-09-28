@@ -13,9 +13,9 @@
 # traverse stacks in the default horizontal layout. Bare Up/Down move between
 # workspace rows.
 "Mod+Left" = "window-focus-left"
-"Mod+Down" = "window-focus-down"
-"Mod+Up" = "window-focus-up"
 "Mod+Right" = "window-focus-right"
+# "Mod+Down" = "window-focus-down"
+# "Mod+Up" = "window-focus-up"
 
 # Window state and layout
 "Mod+T" = "window-toggle-floating"
@@ -28,10 +28,10 @@
 
 # Common keybinds
 "Mod+Escape" = "session-quit"
-"Mod+Shift+Left" = "column-move-left"
-"Mod+Shift+Down" = "window-move-down"
-"Mod+Shift+Up" = "window-move-up"
-"Mod+Shift+Right" = "column-move-right"
+# "Mod+Shift+Left" = "column-move-left"
+# "Mod+Shift+Down" = "window-move-down"
+# "Mod+Shift+Up" = "window-move-up"
+# "Mod+Shift+Right" = "column-move-right"
 # "Mod+F" = "window-toggle-fullscreen"             # Exit restores the previous layout size immediately
 # "Mod+Ctrl+F" = "window-toggle-maximize"
 "Mod+F" = "window-toggle-maximize"             # Exit restores the previous layout size immediately
@@ -59,10 +59,10 @@
 "Mod+Shift+7" = "window-move-to-workspace:7"
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
-"Mod+Ctrl+Down" = "workspace-next"
-"Mod+Ctrl+Up" = "workspace-previous"
-"Mod+Ctrl+Shift+Down" = "window-move-to-workspace-next"
-"Mod+Ctrl+Shift+Up" = "window-move-to-workspace-previous"
+"Mod+Down" = "workspace-next"
+"Mod+Up" = "workspace-previous"
+"Mod+Shift+Down" = "window-move-to-workspace-next"
+"Mod+Shift+Up" = "window-move-to-workspace-previous"
 # Quote an all-digit name to distinguish it from a position.
 # "Mod+Ctrl+2" = 'workspace-switch:"2"/DP-2'
 
