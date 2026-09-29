@@ -58,6 +58,12 @@ default_pinned = true
 [[window_rule]]
 match.title = ".Emulator."
 default_floating = true
+default_maximize = false
+
+[[window_rule]]
+match.title = "^Authenticator$"
+default_floating = true
+default_maximize = false
 
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
