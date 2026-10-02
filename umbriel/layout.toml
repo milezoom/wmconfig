@@ -65,6 +65,11 @@ match.title = "^Authenticator$"
 default_floating = true
 default_maximize = false
 
+[[window_rule]]
+match.title = "Edit Connection."
+default_floating = true
+default_maximize = false
+
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
 blur = true
