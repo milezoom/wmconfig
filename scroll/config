@@ -1,0 +1,12 @@
+# Config for scroll
+# Read `man 5 scroll` for a complete reference.
+
+include ./variables
+include ./inputoutput
+include ./windowlayout
+include ./animation
+include ./keybindings
+# include ./statusbar
+
+# startup options
+exec noctalia
