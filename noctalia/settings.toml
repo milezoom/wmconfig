@@ -11,6 +11,7 @@ start = [ "launcher", "media", "taskbar" ]
 
 [control_center.calendar]
 show_events_card = false
+show_week_numbers = true
 
 [dock]
 shadow = false
