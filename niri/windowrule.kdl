@@ -1,0 +1,42 @@
+layout {
+  gaps 8
+}
+
+window-rule {
+  open-maximized true
+  geometry-corner-radius 4
+  clip-to-geometry true
+
+  focus-ring {
+    inactive-color "#505050"
+    urgent-color "#9b0000"
+    width 2
+  }
+
+  border {
+    width 2
+  }
+}
+
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+window-rule {
+  match title="Welcome to Android Studio"
+  open-floating true
+}
+
+window-rule {
+  match title="Device Manager"
+  open-floating true
+}
+
+window-rule {
+  match app-id="Emulator"
+  open-floating true
+}

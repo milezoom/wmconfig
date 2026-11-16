@@ -1,0 +1,25 @@
+spawn-at-startup "noctalia"
+
+output "eDP-1" {
+  scale 1.0
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+prefer-no-csd
+
+cursor {
+  hide-when-typing
+}
+
+hotkey-overlay {
+  skip-at-startup
+  hide-not-bound
+}
+
+include "bindings.kdl"
+include "windowrule.kdl"
+include "input.kdl"

@@ -1,0 +1,10 @@
+input {
+  touchpad {
+    tap
+    disabled-on-external-mouse
+    middle-emulation
+  }
+  mouse {
+    left-handed
+  }
+}
