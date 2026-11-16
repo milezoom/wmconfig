@@ -4,6 +4,7 @@ layout {
 
 window-rule {
   open-maximized true
+  open-maximized-to-edges false
   geometry-corner-radius 4
   clip-to-geometry true
 
