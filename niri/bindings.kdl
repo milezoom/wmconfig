@@ -30,4 +30,7 @@ binds {
     Mod+T { toggle-window-floating; }
     Mod+Q { close-window; }
     Mod+O { open-overview; }
+
+    // Applications
+    Print { spawn-sh "flameshot gui"; }
 }
