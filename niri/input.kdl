@@ -8,3 +8,9 @@ input {
     left-handed
   }
 }
+
+gestures {
+  hot-corners {
+    off
+  }
+}
