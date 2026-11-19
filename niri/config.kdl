@@ -1,4 +1,10 @@
 spawn-at-startup "noctalia"
+spawn-at-startup "fcitx5" "-d"
+
+include "environments.kdl"
+include "bindings.kdl"
+include "windowrule.kdl" 
+include "input.kdl"
 
 output "eDP-1" {
   scale 1.0
@@ -20,6 +26,3 @@ hotkey-overlay {
   hide-not-bound
 }
 
-include "bindings.kdl"
-include "windowrule.kdl"
-include "input.kdl"

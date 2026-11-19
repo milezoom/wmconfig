@@ -196,7 +196,7 @@ telemetry_enabled = true
 
     [shell.window_switcher]
     mru = true
-    style = "icons"
+    style = "grid"
 
 [theme]
 source = "wallpaper"
