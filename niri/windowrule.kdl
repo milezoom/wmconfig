@@ -48,6 +48,11 @@ window-rule {
 }
 
 window-rule {
+  match title="Calculator"
+  open-floating true
+}
+
+window-rule {
   match app-id="fcitx" title="^Fcitx5 Input Window$"
   open-floating true
 }
