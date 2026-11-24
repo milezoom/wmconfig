@@ -9,6 +9,15 @@ radius = 0
 shadow = false
 start = [ "launcher", "media", "taskbar" ]
 
+[calendar]
+enabled = true
+
+    [calendar.account.subscription]
+    color = "error"
+    name = "Holiday in Indonesia"
+    server_url = "https://www.officeholidays.com/ics-clean/indonesia/jakarta"
+    type = "ics"
+
 [control_center.calendar]
 show_events_card = false
 show_week_numbers = true
@@ -19,6 +28,7 @@ shadow = false
 [hooks]
 battery_percentage_changed = "/home/muslim/Projects/scripts/battery-notification.sh"
 rebooting = "/home/muslim/Projects/scripts/before-shutdown.sh"
+session_unlocked = "sudo /usr/sbin/modprobe -r i2c_hid_acpi && sudo /usr/sbin/modprobe i2c_hid_acpi"
 shutting_down = "/home/muslim/Projects/scripts/before-shutdown.sh"
 theme_mode_changed = "/home/muslim/Projects/scripts/theme-change.sh"
 
@@ -143,6 +153,7 @@ position_vertical = "bottom_center"
 launch_apps_as_systemd_services = true
 polkit_agent = true
 popup_shadows = false
+show_close_buttons = false
 telemetry_enabled = true
 
     [shell.launcher]
@@ -217,6 +228,9 @@ path = "/home/muslim/Pictures/desktopwallpaper.jpg"
 [widget.battery]
 display_mode = "graphic"
 hide_when_plugged = true
+
+[widget.clock]
+tooltip_format = "{:%A, %d %B %Y}"
 
 [widget.media]
 hide_when_no_media = true

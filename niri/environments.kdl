@@ -1,4 +1,5 @@
 environment {
+    DISPLAY ":0"
     XMODIFIERS "@im=fcitx"
     QT_IM_MODULE "fcitx"
     // Optional: set if dead keys/Compose or specific GTK/SDL apps need it

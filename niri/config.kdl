@@ -1,5 +1,6 @@
 spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5" "-d"
+spawn-at-startup "xwayland-satellite"
 
 include "environments.kdl"
 include "bindings.kdl"
